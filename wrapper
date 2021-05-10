@@ -1,0 +1,5 @@
+#!/bin/bash
+
+dir=$(dirname $BASH_SOURCE[0]})
+source ${dir}/ENV/bin/activate
+python3 ${dir}/find-dead-links.py $*
